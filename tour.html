@@ -30,6 +30,13 @@ var map = new mapboxgl.Map({
 //map.addControl(new MapboxDirections({
     //accessToken: mapboxgl.accessToken
 //}), 'top-left');
+    
+    
+var myLayer = L.mapbox.featureLayer()
+  .loadURL('brouter.geojson')
+  .addTo(map);    
+    
+    
 </script>
 
 </body>
